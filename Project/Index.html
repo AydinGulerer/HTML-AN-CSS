@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFÖY</title>
+    <link rel="stylesheet" href="./STYLE/Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body style="height: 2000px
+;" >
+<main>
+    <div class="navbar">
+        <nav>
+            <ul>
+                <li style="font-size: 18px;" id="navbarsag" >Aydın Gülerer</li>
+                <li>ABOUT<Abbr></Abbr></li>
+                <li>WORKS</li>
+                <li>SHOWREEL</li>
+                <li>SKILLS</li>
+                <li>CONTACT</li>
+        
+            </ul>
+        </nav>
+
+
+
+    </div>
+
+    <div>
+        <h2 class="aboutmehead">ABOUT ME</h2>
+        <hr style="margin-top: 1rem; margin-right: 22rem;margin-left: 22rem; margin-bottom: 2rem; " >
+        <img class="aboutmeimg" style="display: inline-block; vertical-align: middle;"  src="./Images/Aboutmeimage.jpg" width="400px" height="400px" alt="Resim Görüntülenemiyor">
+        <p class="aboutmep" >My name is Aydin Gulerer, and I graduated from the Banking and Insurance Department at Bilgi University. I'm 22 years old, and I have been working in various departments of the textile industry for the past two years, such as customer service and data entry. I've always been interested in computers since I was young, but I never had any guidance about it, so I couldn't pursue it. However, while working at my first job, which was an export-oriented textile company, I realized my computer skills could be useful. I learned how to use Microsoft Office programs and even took English courses at British Time to improve my skills. Afterward, I worked as a programmer at Texim, where I use the SAP Program. During this time, I realized that I am good with computers, and I can learn new things quickly. As a result, I enrolled in the Neos Software Course, where I am currently studying to become a full-stack developer.</p>
+    </div>
+
+    <div>
+<h2 class="workshead" >WORKS</h2>
+<hr style="margin-top: 1rem; margin-right: 22rem;margin-left: 22rem; margin-bottom: 2rem; " >
+<p style="text-align: center;  margin-top: 2rem; margin-bottom: 2rem; " >I have worked with world-renowned brands such as Puma, The North Face, Gant, and Hugo Boss in the textile industry. I have assisted in the development of collections for these clients. Below are some examples of my work</p>
+
+</div>
+
+<div class="slider" >
+
+<div class="slide">
+<img src="./Images/HugoBoss.jpg" alt="">
+</div>
+
+<div class="slide">
+<img src="./Images/Puma.jpg" alt="">
+</div>
+
+<div class="slide">
+
+<img src="./Images/puma1.jpg" alt="">
+</div>
+
+
+<div class="slide" >
+    <img src="./Images/tnf.jpg" alt="">
+</div>
+<script>
+const slides = document.querySelectorAll('.slide'); // Slayt listesini al
+let currentSlide = 0; // Başlangıç slaytı
+
+// Slaytları göstermek için fonksiyon
+function showSlide(n) {
+  // Aktif slaytın sınıfını ekle
+  slides[currentSlide].classList.remove('active');
+  slides[n].classList.add('active');
+  currentSlide = n;
+}
+
+// Otomatik geçiş için zamanlayıcı
+setInterval(() => {
+  let nextSlide = currentSlide + 1;
+  if (nextSlide >= slides.length) {
+    nextSlide = 0;
+  }
+  showSlide(nextSlide);
+}, 5000);
+</script>
+
+
+</div>
+
+<div>
+    <h2 class="Showreelhead" >SHOWREEL</h2>
+    <hr style=" text-align: center ;margin-top: 1rem; margin-right: 22rem;margin-left: 22rem; margin-bottom: 2rem; " >
+
+</div>
+
+
+<div class="iframeconteiner" >
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/AIKb3Duz9OU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" frameborder="0" allow="autoplay; encrypted-media"></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/j7yIHaoK-RA " title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/JsOdv879BrE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/N97lnL1qc2E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+</div>
+
+<div class="skills">
+  <h2>Skills</h2>
+  <hr style=" text-align: center ;margin-top: 1rem; margin-right: 22rem;margin-left: 22rem; margin-bottom: 2rem; " >
+  <ul>
+    <li>
+      <h3>HTML</h3>
+      <div class="skill-bar">
+        <div class="skill-level html" data-value="90%"></div>
+      </div>
+    </li>
+    <li>
+      <h3>CSS</h3>
+      <div class="skill-bar">
+        <div class="skill-level css" data-value="80%"></div>
+      </div>
+    </li>
+    <li>
+      <h3>Microsoft Office</h3>
+      <div class="skill-bar">
+        <div class="skill-level js" data-value="70%"></div>
+      </div>
+    </li>
+  </ul>
+</div>
+
+
+
+
+<div class="Contact" >
+<h2 class="Contacthead">CONTACT</h2>
+<hr style=" text-align: center ;margin-top: 1rem; margin-right: 22rem;margin-left: 22rem; margin-bottom: 2rem; " >
+<div class="inputs">    
+<input class="text" placeholder="Name" type="text"> 
+<input class="phone" placeholder="Phone" type="number"> <br>
+<input class="email" placeholder="Email Adress" type="email"> <br>
+<button class="button">CONTACT US </button>
+</div>
+
+<ul class="socialmediatag" >
+  <li> <i class="fa-brands fa-facebook"></i> </li>
+  <li> <i class="fa-brands fa-instagram"></i></li>
+  <li> <i class="fa-brands fa-pinterest"></i> </li>
+  <li> <i class="fa-brands fa-twitter"></i> </li>
+  <li><i class="fa-brands fa-youtube"></i> </li>
+ 
+  </ul>
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+</main>
+    
+</body>
+</html>
